@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
+@font-face {
+  font-family: ITCFranklinGothicStd-Book;
+  src: url(assets/fonts/ITCFranklinGothicStd-Book.otf) format("opentype");
+}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: ITCFranklinGothicStd-Book;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider         figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+} 
+.sub-main-w3 {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.sub-main-w3 .new {
+    max-width: 600px;
+    margin: 0 5vw;
+    background: rgba(25, 19, 19, 0.19);
+    padding: 3.5vw;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.33);
+	color:white;
+}
+.btn {
+	font-family: inherit;
+	font-size: 12px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 6px 62px;
+	display: inline-block;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	    margin-right: 27px;
+}
+.btn-4 {
+	border-radius: 50px;
+	border: 1px solid #fff;
+	color: #fff;
+	overflow: hidden;
+}
+.btn-4:active {
+	border-color: #17954c;
+	color: #000;
+}
+
+.btn-4:hover {
+	background: #fff;
+	color: #000;
+}
+.list-item{
+	    font-size: 12px;
+    margin-bottom: 29px
+}
