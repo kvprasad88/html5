@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/assets/boostrap4.0.css" />
+<div class="header-main">
+    <header>
+        <div id="captioned-gallery" *ngIf="!displayAgreementTab">
+            <figure class="slider">
+                <figure *ngFor="let imageData of data">
+                    <img [src]="'assets/images/'+ imageData.title +'.png'" />
+                    <figcaption>{{imageData.title}}</figcaption>
+                </figure>
+
+            </figure>
+        </div>
+        <div class="row header-nav">
+            <div class="col-8 logo-part">
+                <img src="../assets/header/-logo.png" width="80px" height="80px">
+            </div>
+
+            <div class="lang-currency-part col-4">
+                <div class="currency">
+                    <div class="currency-image">
+                        <img src="../assets/USFlag@2x.png" width="48px" height="32px">
+                    </div>
+                    <div class="currency-text">
+                        <img src="../assets/USD@2x.png" width="52px" height="28px">
+                    </div>
+                </div>
+
+                <div class="engChn">
+                    <div class="engImage">
+                        <img src="../assets/EN@2x.png" width="34px" height="28px">
+                    </div>
+
+                    <div class="separator"></div>
+                    <div class="cnImage">
+                        <img src="../assets/CN@2x.png" width="56px" height="28px">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+
+<div class="landingPageContainer row">
+
+  <div class="navigation-tabs clearfix">
+    <ul>
+      <li label="Brands" [routerLink]="['brandsDisplay']" routerLinkActive="active">Brands</li>
+      <li label="Bestsellers" [routerLink]="['bestSeller']">Bestsellers</li>
+      <li label="Promotions" [routerLink]="['promotionsDisplay']"> Promotions </li>
+      <li label="Types" [routerLink]="['typesBrand']"> Types </li>
+    </ul>
+
+  </div>
+  <router-outlet></router-outlet>
+
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,279 @@
+<div class="brandsContainer">
+  <div class="brands-filters">
+    <ul class="subModules" role="tablist">
+      <!-- *ngFor="let subModule of subModules; let i = index" 
+      [class.active]="selectedIndex === i" 
+      (click)="setIndex(i)" -->
+      <li (click)="getCategories();">Capsulated / Menthol</li>
+      <li class="active" (click)="getCategories();">Chinese Tobacco</li>
+      <li (click)="getCategories();">Heat Not Burn</li>
+      <li (click)="getCategories();">International Tobacco</li>
+      <li (click)="getCategories();">Roll Your Own</li>
+      <li (click)="getCategories();">Slim Cigarettes</li>
+    </ul>
+  </div>
+  <div *ngIf="displayBrands">
+    <div class="category-heading">Bestsellers</div>
+    <div class="category-tab">
+      <ul class="productConatiner">
+        <li class="product-category">
+          <div class="productDetails">
+            <img src="../assets/brands/Image-placeholder_9.jpg" width="96px" height="136px">
+          </div>
+          <div class="category-name">Marlboro</div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+            <img src="../assets/brands/Image-placeholder_10.jpg">
+
+          </div>
+          <div class="category-name">
+            Chung Hwa
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_11.jpg">
+          </div>
+          <div class="category-name">
+            Camel
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_12.jpg">
+
+          </div>
+          <div class="category-name">
+            Panda
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_13.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="category-heading">All Brands</div>
+    <div class="all-categories-tab">
+      <ul class="productConatiner">
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder.jpg">
+          </div>
+          <div class="category-name">
+            Alfred Dunhil
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_3.jpg">
+
+          </div>
+          <div class="category-name">
+            Amber Leaf
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_4.jpg">
+
+          </div>
+          <div class="category-name">
+            American Spirits
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_5.jpg">
+
+          </div>
+          <div class="category-name">
+            Benson & Hedges
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_14.jpg">
+
+          </div>
+          <div class="category-name">
+            Diao Yu Tai
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="displayfilterBrands">
+    <img src="../assets/body/back.png" class="iconsback" (click)="back();" width="32px" height="32px">
+    <div class="category-heading">All Brands</div>
+    <div class="all-categories-tab">
+      <ul class="productConatiner">
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder.jpg">
+          </div>
+          <div class="category-name">
+            Alfred Dunhil
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_3.jpg">
+
+          </div>
+          <div class="category-name">
+            Amber Leaf
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_4.jpg">
+
+          </div>
+          <div class="category-name">
+            American Spirits
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_5.jpg">
+
+          </div>
+          <div class="category-name">
+            Benson & Hedges
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_14.jpg">
+
+          </div>
+          <div class="category-name">
+            Diao Yu Tai
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+        <li class="product-category">
+          <div class="productDetails">
+
+            <img src="../assets/brands/Image-placeholder_8.jpg">
+
+          </div>
+          <div class="category-name">
+            Sheng Xiao
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
