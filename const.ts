@@ -26,3 +26,7 @@ import { ApiRefs } from '../../common/const/api-refs';
         const result = response.json();
         return result.result;
       });
+	  
+	  https://stackoverflow.com/questions/48948392/infinite-loop-slider-using-keyframes-css3
+	  Flickering
+	  https://maximelafarie.com/avoid-css-flickering

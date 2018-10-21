@@ -29,3 +29,6 @@
       document.body.removeChild(link);
     }
   }
+  
+  box-shadow: inset 25px 0px 25px -25px rgba(0,0,0,0.45), inset -25px 0px 25px -25px rgba(0,0,0,0.45);
+
