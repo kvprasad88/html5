@@ -30,3 +30,11 @@ import { ApiRefs } from '../../common/const/api-refs';
 	  https://stackoverflow.com/questions/48948392/infinite-loop-slider-using-keyframes-css3
 	  Flickering
 	  https://maximelafarie.com/avoid-css-flickering
+	  
+	  popup data update in the component when it close angular5
+	  
+	  https://www.concretepage.com/angular-2/angular-2-custom-event-binding-eventemitter-example
+	  
+	  https://stackoverflow.com/questions/45942769/how-to-refresh-parent-component-after-modal-component-closes
+	  
+	  https://dzone.com/articles/communication-between-components-using-input-in-an
